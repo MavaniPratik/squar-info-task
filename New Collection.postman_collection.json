@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "85ab1acf-1976-444d-aee8-5fd45bca671c",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"firstName\" : \"pratik\",\r\n        \"lastName\" : \"mavani\",\r\n        \"dateofBirth\" : \"1-1-2000\",\r\n        \"email\" : \"pratik@gmail.com\",\r\n        \"password\" : \"pratik\",\r\n        \"confirmpassword\" : \"pratik\"\r\n    },\r\n     {\r\n        \"firstName\" : \"naitik\",\r\n        \"lastName\" :\"gondaliya\",\r\n        \"dateofBirth\" : \"2-2-2022\",\r\n        \"email\" : \"naitik@gmail.com\",\r\n        \"password\" : \"naitik\",\r\n        \"confirmpassword\" : \"naitik\"\r\n    },\r\n     {\r\n        \"firstName\" : \"jenish\",\r\n        \"lastName\" : \"pethani\",\r\n        \"dateofBirth\" : \"3-3-1999\",\r\n        \"email\" : \"jenish@gmail.com\",\r\n        \"password\" : \"jenish\",\r\n        \"confirmpassword\" : \"jenish\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/adduser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"adduser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.MQ.9AfLNb8AwuLEvyGFeerb1Vq3byt2GXJlyLZzU6jwDPI",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/userbytoken",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"userbytoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.Mg.rsKwhz9vUy9-sMljZ9XHKHxGnR05ZN75fCZZd5kapOM",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/getoneuser/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getoneuser",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/getalluser",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"getalluser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiJ9.Mw.tjOa5S-Ay7bH6YrLks5ulVrCZwIAjr33y_0SrZjzEg8",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/deleteuser/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"deleteuser",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
